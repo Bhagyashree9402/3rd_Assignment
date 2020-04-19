@@ -75,6 +75,7 @@ function generatePassword() {
 
     //number of password criteria entered by user
     var criteriaNumber = arrayPassword.length;
+    //empty string declaration
     var constructString = "";
     var passwordString = "";
 

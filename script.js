@@ -53,7 +53,10 @@ function generatePassword() {
     var passwordSpecialcharacter = confirm("Would you want special character");
     console.log("Special character is " + passwordSpecialcharacter);
 
+    //An empty array is declared
     var arrayPassword = [];
+
+    //using if condition entered password criteria is pushed into an empty array
     if (passwordLowercase) {
         arrayPassword.push(alphabetLowercase);
     }
@@ -69,10 +72,13 @@ function generatePassword() {
     if (passwordSpecialcharacter) {
         arrayPassword.push(specialCharacters);
     }
+
+    //number of password criteria entered by user
     var criteriaNumber = arrayPassword.length;
     var constructString = "";
     var passwordString = "";
 
+    //logic for  computing the entered password criteria
     for (var j = 0; j < criteriaNumber; j++) {
         constructString = arrayPassword.pop();
         if (j == (criteriaNumber - 1)) {

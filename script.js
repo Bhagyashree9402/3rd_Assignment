@@ -23,11 +23,11 @@ function generatePassword() {
     //prompt for length of the password
     var passwordLength = prompt("Please specify the length of the password(between 8 to 128 characters)");
 
-    //negative condition for whether entered character is number or not
+    //negative conditions to see if the entered character is a number and false in the range between 8 and 128.
     while (isNaN(passwordLength)) {
         passwordLength = prompt("Your password length is incorrect.Please specify the length of the password(between 8 to 128 characters)");
     }
-    //negative condition for entered password length is incorrect
+
     while ((passwordLength < 8) || (passwordLength > 128)) {
         passwordLength = prompt("Your password length is incorrect.Please specify the length of the password(between 8 to 128 characters)");
     }

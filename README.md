@@ -16,9 +16,9 @@ Create an application that generates a random password based on user-selected cr
 - Prompt for upper case option,if lower case is not selected make sure user selects upper case.
 - Prompt for numerics.
 - Prompt for special characters.
-- Once all the prompts are answered,the corresponding criteria characters are pushed into an array.
--  Passwoed criteria selected by the user are given equal priority and populated into the generated password.
-- Although the first criteria (lowercase/upprcase) characters are used to fill up rest of the unfilled characters in the final generated password.
+- Once all the prompts are answered,the corresponding criteria characters are pushed into the array.
+-  Password criteria selected by the user are given equal priority and populated into the generated password.
+- The first criteria (lowercase/upprcase) characters are used to fill up rest of the unfilled characters in the final generated password.
 - password is generated that matches the selected criteria.
 - Password is written to the page.
 

@@ -1,5 +1,5 @@
 # 3rd_Assignment
-Random password generator
+Random Password Generator
 
 # Overview
 Generate password (between 8-128)for the user as per strong security guidelines.

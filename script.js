@@ -14,6 +14,7 @@ function writePassword() {
 
 function generatePassword() {
 
+    //all password criteria declared as strings
     var alphabetUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var alphabetLowercase = alphabetUppercase.toLowerCase();
     var numerics = "0123456789";

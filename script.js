@@ -34,19 +34,23 @@ function generatePassword() {
 
     console.log("passwordlength is " + passwordLength);
 
+    //user confirmation for lowercase letter
     var passwordLowercase = confirm("Would you want lower case");
     console.log("Lower case is " + passwordLowercase);
 
+    //user confirmation for choice of cases
     var passwordUppercase = confirm("Would you want Upper case");
     console.log("Upper case is " + passwordUppercase);
     while (!passwordUppercase && !passwordLowercase) {
         passwordUppercase = confirm("Upper case can not be false,please confirm your choice");
     }
 
+    //user confirmation for numerics
     var passwordNumeric = confirm("Would you want numeric");
     console.log("Numeric is " + passwordNumeric);
 
-    var passwordSpecialcharacter = confirm("Would you special character");
+    //user confirmation for special characters
+    var passwordSpecialcharacter = confirm("Would you want special character");
     console.log("Special character is " + passwordSpecialcharacter);
 
     var arrayPassword = [];

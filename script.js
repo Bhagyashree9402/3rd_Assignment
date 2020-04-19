@@ -14,15 +14,21 @@ function writePassword() {
 
 function generatePassword() {
 
-    let alphabetUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    let alphabetLowercase = alphabetUppercase.toLowerCase();
+    var alphabetUppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var alphabetLowercase = alphabetUppercase.toLowerCase();
     var numerics = "0123456789";
-    let specialCharacters = "\!\"\#\$\%\&\'\(\)\*\+\,\-\.\/\:\;\<\=\>\?\@\[\\\]\^\_\`\{\|\}\~";
+    var specialCharacters = "\!\"\#\$\%\&\'\(\)\*\+\,\-\.\/\:\;\<\=\>\?\@\[\\\]\^\_\`\{\|\}\~";
 
     var passwordLength = prompt("Please specify the length of the password(between 8 to 128 characters)");
+
+    while (isNaN(passwordLength)) {
+        passwordLength = prompt("Your password length is incorrect.Please specify the length of the password(between 8 to 128 characters)");
+    }
+
     while ((passwordLength < 8) || (passwordLength > 128)) {
         passwordLength = prompt("Your password length is incorrect.Please specify the length of the password(between 8 to 128 characters)");
     }
+
     console.log("passwordlength is " + passwordLength);
 
     var passwordLowercase = confirm("Would you want lower case");
